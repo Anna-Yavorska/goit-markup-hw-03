@@ -1,0 +1,161 @@
+:root {
+  --main-color: #434455;
+  --secondary-color: #2e2f42;
+  --secondary-background: #f4f4fd;
+  --logo-button-color: #4d5ae5;
+  --background-color: #e5e5e5;
+  --accent-color: #ffffff;
+  --secondary-accent-color: #404bbf;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-color);
+  background-color: var(--accent-color);
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+/* Header */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo-button-color);
+}
+.top-logo-part-two {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+.logo-part-two {
+  color: var(--secondary-color);
+}
+.title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
+.title:hover,
+.title:focus{
+  color: var(--secondary-accent-color);
+}
+.address{
+    font-style: normal;
+}
+.address-link{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: inherit;
+}
+.address-link:hover,
+.address-link:focus{
+    color: var(--secondary-accent-color);
+}
+/* Hero */
+.hero {
+  background-color: var(--secondary-color);
+ 
+}
+.hero-title{
+font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+text-align: center;
+   color: var(--accent-color);
+}
+.main-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: var(--logo-button-color);
+  color: var(--accent-color);
+  cursor: pointer;
+}
+.main-button:hover,
+.main-button:focus,
+.menu-button:hover,
+.menu-button:focus {
+  background-color: var(--secondary-accent-color);
+  color: var(--accent-color);
+}
+/* Our strengths */
+.hidden-title{
+     position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
+.description {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--secondary-color);
+}
+/* Team */
+.team-section {
+  background-color: var(--secondary-background);
+}
+.team-photo{
+    background-color: var(--accent-color);
+}
+/* Footer */
+.footer {
+  background-color: var(--secondary-color);
+}
+.footter-logo-part-two {
+  color: var(--secondary-background);
+}
+.footer-description {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secondary-background);
+}
+/* Menu buttons */
+.menu-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--logo-button-color);
+  background-color: var(--secondary-background);
+  cursor: pointer;
+}
