@@ -6,11 +6,34 @@
   --background-color: #e5e5e5;
   --accent-color: #ffffff;
   --secondary-accent-color: #404bbf;
+  --card-border-color: #e7e9fc;
 }
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-color);
   background-color: var(--accent-color);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .list {
   list-style: none;
@@ -18,8 +41,28 @@ body {
 .link {
   text-decoration: none;
 }
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 /* Header */
+.header {
+  padding-top: 24px;
+  border-bottom: 1px solid var(--card-border-color);
+}
+.header-container {
+  display: flex;
+}
+.main-navigation {
+  display: flex;
+}
 .logo {
+  display: inline-block;
+  padding: 24px 0;
+  margin-right: 76px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -40,7 +83,13 @@ body {
 .logo-part-two {
   color: var(--secondary-color);
 }
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
 .title {
+  display: inline-block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -48,38 +97,56 @@ body {
   color: var(--secondary-color);
 }
 .title:hover,
-.title:focus{
+.title:focus {
   color: var(--secondary-accent-color);
 }
-.address{
-    font-style: normal;
+.address {
+  margin-left: auto;
+  font-style: normal;
+  display: flex;
+  align-items: center;
 }
-.address-link{
-  font-weight: 400;
+.contacts {
+  display: flex;
+  gap: 40px;
+}
+.address-link {
+  display: inline-block;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: inherit;
 }
 .address-link:hover,
-.address-link:focus{
-    color: var(--secondary-accent-color);
+.address-link:focus {
+  color: var(--secondary-accent-color);
 }
 /* Hero */
 .hero {
   background-color: var(--secondary-color);
- 
 }
-.hero-title{
-font-weight: 700;
+.hero-container{
+  padding: 188px 0;
+}
+.hero-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+  width: 496px;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-text-align: center;
-   color: var(--accent-color);
+  text-align: center;
+  color: var(--accent-color);
 }
 .main-button {
-  font-family: inherit;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  min-width: 169px;
+  height: 56px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -87,6 +154,8 @@ text-align: center;
   background-color: var(--logo-button-color);
   color: var(--accent-color);
   cursor: pointer;
+  border: none;
+  border-radius: 4px;
 }
 .main-button:hover,
 .main-button:focus,
@@ -96,17 +165,33 @@ text-align: center;
   color: var(--accent-color);
 }
 /* Our strengths */
-.hidden-title{
-     position: absolute;
+.strengths-container{
+  padding-top: 128px;
+  padding-bottom: 28px;
+}
+
+.visually-hidden {
+  position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
-  padding: 0;
-  overflow: hidden;
   border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.list-position {
+  display: flex;
+  gap: 24px;
+  
+}
+.list-position .subtitle {
+  width: 264px;
 }
 .subtitle {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -120,7 +205,7 @@ text-align: center;
   color: var(--main-color);
 }
 .section-title {
-  font-weight: 700;
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -128,29 +213,85 @@ text-align: center;
   text-transform: capitalize;
   color: var(--secondary-color);
 }
+/* What are we doing */
+.container-examples{
+  padding-bottom: 120px;
+}
+.examples {
+  display: flex;
+  gap: 24px;
+}
+.example-item{
+  width: calc((100%-48px)/3);
+}
 /* Team */
 .team-section {
   background-color: var(--secondary-background);
 }
-.team-photo{
-    background-color: var(--accent-color);
+.employee {
+  text-align: center;
+}
+.employee-card {
+  display: flex;
+  gap: 24px;
+}
+.team-photo {
+  background-color: var(--accent-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  width: calc((100% -72px)/4);
+}
+.employee-deskription {
+  padding: 32px 16px;
 }
 /* Footer */
 .footer {
+  padding: 100px 0;
   background-color: var(--secondary-color);
 }
-.footter-logo-part-two {
+.logo-footer {
+  display: inline-block;
+  padding-top: 100px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo-button-color);
+}
+.footer-logo-part-two {
   color: var(--secondary-background);
 }
 .footer-description {
+  margin-top: 16px;
+  padding-bottom: 100px;
+  display: block;
+  width: 264px;
+  margin-right: auto;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-background);
 }
+/* Portfolio */
+.our-works {
+  padding-bottom: 120px;
+}
 /* Menu buttons */
+.portfolio-button {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding-top: 96px;
+}
 .menu-button {
-  font-family: inherit;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
+  height: 48px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -158,4 +299,33 @@ text-align: center;
   color: var(--logo-button-color);
   background-color: var(--secondary-background);
   cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+.our-works{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.work-example {
+display: flex;
+width: calc((100% - 48px)/3);  
+  padding-bottom: 32px;
+  border: 1px solid var(--card-border-color);
+}
+.example-item{
+  display: inline-block;
+  
+  box-sizing: border-box;
+  width: 360px;
+  
+}
+.work-example .subtitle{
+  margin-top: 32px;
+}
+.example-item .subtitle{
+  padding-left: 16px;
+}
+.example-item .description{
+  padding-left: 16px;
 }
