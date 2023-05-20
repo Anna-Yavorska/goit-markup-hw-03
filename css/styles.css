@@ -50,7 +50,6 @@ img {
 }
 /* Header */
 .header {
-  padding-top: 24px;
   border-bottom: 1px solid var(--card-border-color);
 }
 .header-container {
@@ -251,7 +250,6 @@ img {
 .logo-footer {
   display: inline-block;
   margin-bottom: 16px;
-  padding-top: 100px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -264,7 +262,6 @@ img {
   color: var(--secondary-background);
 }
 .footer-description {
-  padding-bottom: 100px;
   display: block;
   width: 264px;
   margin-right: auto;
@@ -315,9 +312,7 @@ img {
   row-gap: 48px;
 }
 .work-example {
-  display: flex;
   width: calc((100% - 48px) / 3);
-  border: 1px solid var(--card-border-color);
 }
 .example-item {
   display: inline-block;
